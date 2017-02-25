@@ -1,0 +1,5 @@
+version: '2'
+services:
+  pg:
+    image: tbeadle/pg_upgrader:0.1
+    build: .

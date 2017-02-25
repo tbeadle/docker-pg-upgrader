@@ -1,0 +1,10 @@
+version: '2'
+services:
+  pg:
+    image: tbeadle/pg-upgrader:0.1
+    environment:
+      CHECK: 1
+      OLD_VER: 9.4
+    volumes:
+      - /var/lib/database:/var/lib/postgresql/
+      - /var/lib/pg_upgrader:/tmp
